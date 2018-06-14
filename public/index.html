@@ -4,46 +4,81 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel='stylesheet' type='text/css' href='assets/css/stylesheet.css'/>
+<style>
+@font-face {
+    font-family: got_font;
+    src: url('/fonts/game_of_thrones.ttf');
+}
 
-    <style>
-      body {
-              background-image: url("assets/images/blue-grey.png");
+	h1,
+	p,
+	a {
+    	font-family: got_font !important;
+	}
+    .bg {
+		background-image: url("assets/images/got-background.png");
+		padding: 300px 0 500px 0;
+		background-size: cover;
       }
+      
+      .btns {
+          margin-top: 28px;
+          }
+          
+    .red-font {
+    	color: red;
+    	}
+    	
+	a.btn-color {
+		color: #533100;
+    	background: linear-gradient(45deg, rgb(222, 169, 66) 0%,rgba(249,243,232,1) 56%,rgb(215, 161, 55) 96%);
+    	border-top: 1px solid rgba(255,255,255,0.3);
+    	border-left: 1px solid rgba(255,255,255,0.3);
+    	border-bottom: 1px solid rgba(209, 156, 53, 0.93);
+    	border-right: 1px solid rgba(200, 136, 10, 0.5);
+    	box-shadow: inset 0px 0px 2px 2px rgba(153, 106, 26, .05);
+    	padding: 20px 30px;
+}
+
+	#ctp {
+		font-size: 14px;
+		}
+	
+          
     </style>
+    
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Reversi - Game of Thrones</title>
   </head>
   <body>
     <div class="container-fluid text-center">
-      <div class="row">
-        <div class="col">
-            <img class="img-fluid" src="assets/images/top-splash.png" alt="Reversi Logo"/>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-              <a href="name.html" class="btn btn-lg btn-secondary"> Let's Play </a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-            <img class="img-fluid" src="assets/images/bottom-splash.png" alt="Reversi Logo 2"/>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
+    
+      <div class="row btns">
+        <div class="col-3">
               <a href="about.html" class="btn btn-lg btn-info"> About</a>
         </div>
-        <div class="col">
+        <div class="col-6">
+              <h1>REVERSI</h1>
+              <p>WHEN YOU PLAY THE GAME OF THRONES,</p>
+              <p>YOU <span class="red-font">WIN</span> OR YOU <span class="red-font">DIE</span>.</p>
+        </div>
+        <div class="col-3">
               <a href="https://en.wikipedia.org/wiki/Reversi" class="btn btn-lg btn-info">Rules</a>
         </div>
       </div>
+
+      <div class="row bg">
+        <div class="col">
+              <a href="name.html" class="btn btn-lg btn-color btn-secondary"> VALOR MOHRGULIS<br><span id="ctp">(Click to Play)</span> </a>
+        </div>
+      </div>
+
+      
+
     </div>
 
     <!-- Optional JavaScript -->
