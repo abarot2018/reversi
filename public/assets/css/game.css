@@ -10,7 +10,7 @@ body {
 
 @font-face {
 	font-family: got_font;
-	src: url('/fonts/game_of_thrones.ttf');
+	src: url('assets/fonts/game_of_thrones.ttf');
 }
 
 h2, h3, h4, p, a {
